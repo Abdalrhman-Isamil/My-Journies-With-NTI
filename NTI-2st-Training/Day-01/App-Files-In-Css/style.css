@@ -1,0 +1,25 @@
+
+/*! index file */
+/* .boody {
+    background-color: purple;
+    text-align: center;
+    padding: 80px;
+    margin: 40px;
+}
+.kk{
+    color: chartreuse;
+} */
+
+/*! about style */
+
+.item{
+    background-color: rgb(10, 182, 182);
+    text-align: center;
+    width: 500px;
+    display: inline-block;
+}
+
+.item img{
+    width: 100%;
+}
+

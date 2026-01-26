@@ -1,0 +1,72 @@
+.my-area {
+    width: 100%;
+    font-size: 0; /*? inline-block <-- مهم عشان  */
+}
+
+.myphh-image {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.myphh-image img {
+    width: 300px;
+    height: auto;
+}
+
+.my-form {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.my-form h1 {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.spacing-between-rows {
+    margin-bottom: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+}
+
+input,
+textarea {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 300px;
+    height: 80px;
+}
+
+.appoint-ns {
+    text-align: center;
+    padding-right: 60px;
+}
+
+.appoint-ns2 {
+    padding-left: 17%;
+}
+
+button {
+    padding: 8px 20px;
+}
+
+.The-Sentance-Your-Query {
+    padding-top: 30px;
+}
