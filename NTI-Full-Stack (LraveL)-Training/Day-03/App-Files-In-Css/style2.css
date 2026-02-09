@@ -1,0 +1,131 @@
+
+/* ?============? */
+
+/* .item{
+    width: 1000px;
+    height: 1000px;
+    color: aqua;
+    background-color: purple;
+    border: 5px  solid blue;
+    background-image: url(../../Day-01/Files-Images/myphh.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center; 
+
+} */
+
+.meal{
+    width:350px ;
+    height: 200px;
+    background-color: purple;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+.clr{
+    clear: both;
+}
+
+@media (max-width: 992px) {
+    body {
+        margin: 10px;
+    }
+
+    section div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    section div {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form, table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    th, td {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    table {
+        font-size: 14px;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 400px) {
+
+    body {
+        margin: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+
+    section div {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

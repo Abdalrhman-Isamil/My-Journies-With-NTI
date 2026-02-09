@@ -1,0 +1,104 @@
+
+.parent{
+    background-color: blue;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 1000px;
+    height: 100vh;
+/* flex-direction: column-reverse; */
+/* flex-direction: column-reverse; */
+/* flex-flow: row nowrap;
+justify-content: space-evenly; */
+/* align-items: center;
+justify-content: center; */
+/* justify-content: space-evenly; */
+/* flex-direction: column; */
+/* justify-content: center;
+align-items: center; */
+/* justify-content: center;
+align-items: center; */
+/* align-content: center; */
+}
+/*  1+4= 5    500/8 = 100      100    4*100 =400  500  
+6 200  200/6  40
+*/
+.item{
+    width: 100px;
+}
+.one{
+
+height: 150px;
+background-color: tomato;
+/* flex-grow: 1; */
+/* flex-shrink: 4; */
+order: 0;
+}
+.two{
+   
+height: 150px;
+background-color: red;
+/* flex-grow: 4; */
+/* flex-shrink: 1; */
+order: 1;
+}
+.three{
+   
+height: 150px;
+background-color: green;
+/* flex-grow: 1; */
+/* flex-shrink: 1; */
+order: -1;
+}
+.four{
+   
+height: 150px;
+background-color: teal;
+/* flex-grow: 2; */
+/* flex-shrink: 1; */
+order: 0;
+}
+.five{
+   
+height: 150px;
+background-color: burlywood;
+/* flex-grow: 0; */
+/* flex-shrink: 1; */
+order: 0;
+}
+ul{
+    list-style-type: none;
+    background-color: #888;
+    display: flex;
+}
+li{
+    padding: 20px;
+  
+}
+
+
+
+
+.icon{
+    background-color: tomato;
+    /* padding: 10px;
+    border-radius: 50%; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:800px) {
+   
+    ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    li{
+        border-bottom: 3px solid white;
+        font-size: 22px;
+    }
+}
