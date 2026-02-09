@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    width: 25%;
+    position: relative;
+    margin: 25px;
+    overflow: hidden;
+}
+.item img{
+    width: 100%;
+    transition: all 1s 1s;
+}
+.caption{
+    background-color: rgba(136, 136, 136,.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transition: 1s;
+}
+.caption h2{
+    background-color: tomato;
+    padding: 15px;
+    transform: translateX(110%);
+    transition: all 1s 2s;
+}
+.caption p{
+    transform: translateX(100%);
+    transition: all 1s 1.5s;
+}
+.item:hover h2{
+    transform: translateX(0);
+}
+.item:hover p{
+    transform: translateX(0);
+}
+.item:hover .caption{
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+.test > h3{
+    color: red;
+}
+/* .test + h3{
+    color: blue;
+} */
+.test ~ h3{
+    color: greenyellow;
+}
+.meal{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    animation-name: kanba;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes kanba{
+    0%{
+        background-color: yellow;
+    }
+     50%{
+        background-color: brown;
+    }
+     100%{
+        background-color: aquamarine;
+    }
+}
+header{
+    background-image: url(../images/rigel-food-sec-2-img3-200x200.jpg);
+    height: 100vh;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+@keyframes slider{
+    0%{background-image: url(../images/rigel-food-sec-2-img3-200x200.jpg); height: 0; width: 0;}
+    50%{background-image: url(../images/rigel-food-sec-2-img1-200x200.jpg); height: 100vh; width: 100%;}
+    100%{background-image: url(../images/rigel-food-sec-2-img4-200x200.jpg); height: 0; width: 0;}
+}
+.taxi{
+position: relative;
+animation-name: moveTaxi;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+@keyframes moveTaxi{
+    0%{ top: 0; left: 0 ; transform: rotateY(360deg) }
+    50%{ top: 0; left: 90% ; transform: rotateY(360deg);}
+   51%{ top: 0; left: 90% ; transform: rotateY(180deg);}
+    100%{ top: 0; left: 0 ;transform: rotateY(180deg) }
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+background-color: transparent;
+color: black;
+font-size: 30px;
+border-bottom: 5px solid red;
+border-radius: 0;
+}
+.nav-pills .nav-link {
+font-size: 30px;
+color: gold;
+}

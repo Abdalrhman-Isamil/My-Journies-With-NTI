@@ -1,0 +1,26 @@
+/* i{
+
+} */
+
+.item{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    transition: transform 1s;
+}
+
+.item:hover{
+    /*transform: rotate(180deg);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
+    transform:translate(100px,100px);
+    -webkit-transform:translate(100px,100px);
+    -moz-transform:translate(100px,100px);
+    -ms-transform:translate(100px,100px);
+    -o-transform:translate(100px,100px);
+    *//*transform: scale(.8);
+    */transform:skew(20deg) ;
+    /* transform: ; وممكن دي شورت هاند  */
+}   

@@ -1,0 +1,28 @@
+h3{
+    text-align: center;
+    border: teal 6px solid;
+    width: 15%;
+    padding: 25px;
+    position: relative;
+}
+
+h3::after{
+    content: "" ;
+    background-color: #fff;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    left: 15px;
+}
+
+h3::before{
+    content: "" ;
+    background-color: teal;
+    width: 10px;
+    height: 45px;
+    position: absolute;
+    top: 90%;
+    left: 25px;
+    z-index: 9999;
+}
