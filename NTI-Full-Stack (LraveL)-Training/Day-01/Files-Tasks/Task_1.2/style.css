@@ -1,0 +1,60 @@
+body {
+    background-color: purple; 
+    color: white;
+    padding: 5px;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    color: black; 
+    font-size: 35px;
+}
+
+.my-area {
+    background-color: #90888f67;
+    width: 100%;
+    font-size: 0; 
+}
+
+.spacing-between-rows {
+    width: 100%;
+    text-align: left; 
+    padding: 5px 0;
+}
+
+.my-text {
+    display: inline-block;
+    width: 20%; 
+    vertical-align: middle; 
+    font-size: 15px;
+}
+
+.my-text p {
+    line-height: 1.5;
+    padding: 0 15px;
+    text-align: left; 
+}
+
+.myphh-image {
+    display: inline-block;
+    width: 30%; 
+    vertical-align: middle;
+    text-align: center; 
+}
+
+.myphh-image img {
+    width: 350px; 
+    height: 200px; 
+}
+
+/*? حتة زيادة من عندي لزوم الترويق وحفظ حقوق النشر والطباعة وكده يعني */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}

@@ -1,0 +1,35 @@
+      /* body{
+            background-color: blue;
+            text-align: center;
+        } */
+h1{
+    text-align: center;
+    background-color: teal;
+    color: blanchedalmond;
+}
+h2{
+    color: red;
+}
+.test{
+    color: green;
+}
+/* .item{
+    text-align: center;
+    background-color: blueviolet;
+} */
+.parent{
+    background-color: tomato;
+    height: 300px;
+    width: 50%;
+}
+.chiled{
+    background-color: green;
+    height: 50%;
+    width: 50%;
+}
+
+
+
+.item{
+
+}
