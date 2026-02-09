@@ -1,0 +1,67 @@
+/* body{
+    background-color: tomato;
+} */
+/* h1{
+    text-align: center;
+}
+.par{
+   
+}
+.test p{
+ color: blue;
+}
+#idP{
+
+} */
+
+.item{
+    background-color: blue;
+    border: 2px solid tomato;
+    height: 800px;
+    width: 700px;
+     background-image: url(../images/shutterstock_277750193.jpg);
+     background-attachment: fixed; 
+    background-size: cover;
+    background-position: center center; 
+
+color: #fff;
+/* background-image: url(../images/taxi.png) , url(../images/logo.png); */
+/* background-repeat: repeat-y; */
+/* background-repeat: no-repeat ,repeat-y ;
+background-position: 100px 200px , center center; */
+    /* border-color: red;
+    border-width: 15px;
+    border-style: dotted; */
+    /* border: 20px solid yellow; */
+/* border-left:  20px solid yellow;
+border-top:  20px solid yellow;
+border-right:  20px solid yellow;
+border-bottom:  20px solid yellow; */
+/* border-radius: 150px; */
+/* border-bottom-left-radius: 50% ;
+border-top-right-radius: 50%; */
+/* margin-left: 20px;
+margin-top: 20px;
+margin-bottom: 30px;
+margin-right: 30px; */
+/* margin:20px auto;
+text-align: center; */
+/* padding-top: 10px;
+padding-left: 20px; */
+/* padding: 30px 20px; */
+}
+.item img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+p{
+    /* font-size: 16px; */
+    /* font-weight: 700;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        font-family: "Special Gothic Expanded One", sans-serif;
+
+}
+
+

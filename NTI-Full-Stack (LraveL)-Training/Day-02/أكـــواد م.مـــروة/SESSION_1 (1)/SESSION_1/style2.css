@@ -1,0 +1,23 @@
+
+.item{
+    /* background-color: tomato; */
+    width: 32.3%;
+    display: inline-block;
+    text-align: center;
+}
+.item img{
+width: 100%;
+}
+h1{
+    text-align: center;
+}
+/* h2{
+    display: inline;
+    background-color: blue;
+    width: 20%;
+}
+a{
+    display: block;
+    background-color: tomato;
+    width: 45%;
+} */
