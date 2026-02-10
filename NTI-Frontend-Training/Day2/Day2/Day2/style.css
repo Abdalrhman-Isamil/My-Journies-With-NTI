@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/*
+selectors:
+1-tagname -> h1, p, ul
+2-class -> .class
+3-id -> #id
+4- * -> all element
+*/
+
+/* h1{
+    color: red;
+}
+
+.text{
+    color: blue;
+}
+
+.first{
+    font-size: 30px;
+}
+
+#p1{
+    font-weight: bold;
+} */
+
+
+
+/* text style & color system:
+
+color:
+name.
+rgb, rgba
+hex: #000000 #ffffff
+
+
+text:
+
+*/
+*{
+    color: rgb(76, 51, 55);
+}
+
+body{
+    font-family: caveat;
+    color: red;
+}
+
+h1{
+    text-shadow: -10px -10px 10px purple;
+
+
+    font-size: 50px;
+    font-weight: normal;
+    font-style: italic;
+
+
+    letter-spacing: 10px;
+    word-spacing: 30px;
+}
+
+#p1{
+  color: rgb(70,89,200);
+}
+
+p{
+    text-transform:lowercase;
+    text-align:start;
+    text-indent: 20px;
+
+    text-decoration:underline wavy rgb(162, 15, 15) ;
+
+     font-family: "Caveat", cursive; 
+     font-size: 20px;
+}
+
+
+a{
+    /* text-decoration: none; */
+    text-decoration: underline solid blue;
+    font-weight: bold;
+}
