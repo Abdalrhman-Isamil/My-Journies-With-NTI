@@ -1,0 +1,97 @@
+/* body{
+    padding: 0;
+    margin: 0;
+
+} */
+/* h1{
+    width: 300px;
+}
+.w-85{
+    width: 85%;
+}
+.sp{
+    width: 100px;
+    height: 100px;
+}
+.parent{
+    min-height: 200px;
+    margin: 20px;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("bac2.jpg");
+  background-size: cover;      
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0) !important; 
+  position: absolute; 
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+.navbar-nav .nav-link {
+    
+  color: white !important;      
+  transition: color 0.3s ease;   
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.6) !important; 
+}
+
+
+form .form-control {
+  height: 60px;     /* كبر ارتفاع البوكس */
+  font-size: 18px;  /* كبر الخط جوا البوكس علشان يليق */
+}
+
+form .input-group-text {
+  height: 60px;     /* خليه نفس ارتفاع البوكس */
+  font-size: 18px;  /* كبر حجم الأيقونة */
+}
+
+
+.hero {
+      background: url('Background-CrhoXMm2.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* شفاف يغطي الصورة */
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+    }
+    .search-box {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+   footer {
+
+    a {
+        display: block;
+
+        &:hover {
+            color: rgb(255, 255, 255) !important;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        }
+    }
+} 
+
+

@@ -1,0 +1,178 @@
+body {
+
+    max-width: 100svw;
+    height: 100svh;
+    background-image: linear-gradient(160deg, #213143, #2b4a6a, #4a90e2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.body {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    max-height: 3.2em;
+    line-height: 1.6em;
+
+}
+
+.body::after {
+    content: " ... Read more";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 5px;
+    background: #fff;
+    color: #0077ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/** =========================== SEARCH-ABOUT-WEBKIT-BOX =======================**/
+
+/* 
+
+! webkit-box   أهم خصائص 
+
+: لكن بالخصائص دي  flexbox  تقدر تتحكم في العناصر الداخلية بنفس فكرة  display: -webkit-box; لما تكتب   
+
+************************************************************************
+
+? 1  -webkit-box-orient 
+
+بتحدد اتجاه الصندوق (يعني العناصر تتوزع أفقي ولا رأسي).
+
+:القيم المتاحة  
+
+horizontal → أفقي (زي flex-direction: row)
+
+vertical → رأسي (زي flex-direction: column)
+
+inline-axis / block-axis (قيم قديمة مش مستخدمة دلوقتي)
+
+? 2  -webkit-box-direction
+
+بتحدد ترتيب العناصر (من الأول للآخر ولا العكس).
+
+: القيم
+
+normal → الترتيب العادي (زي row)
+
+reverse → بالعكس (زي row-reverse
+
+************************************************************************
+
+? 3 -webkit-box-pack
+بتحدد محاذاة العناصر على المحور الرئيسي
+
+flexbox.  في  justify-content  زي 
+
+: القيم
+
+start → من الأول
+
+end → من الآخر
+
+center → في النص
+
+justify → يتوزعوا بالتساوي
+
+************************************************************************
+
+? 4 -webkit-box-align 
+بتحدد محاذاة العناصر على المحور العمودي
+
+flexbox. في align-items  زي
+
+start و end و center و baseline و stretch : القيم 
+
+
+*/
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+form input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    width: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.8s;
+}
+
+.card:hover {
+    scale: 1.1;
+
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* background-color: #1f8fff4d;       */
+}
+
+.views {
+    color: blue;
+}
+
+.likes {
+    color: red;
+}
+
+.dislikes {
+    color: rgb(184, 182, 27);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
