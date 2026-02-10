@@ -1,0 +1,47 @@
+:root {
+    --mainColor: #433DA4;
+    --secondBG: #584EC7;
+    --header-BG: #2E4A69;
+    --write-msg: #1B589D;
+    --left-msg: #6994C5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    font-family: irish-grover;
+    background-image: url(../contacts-imgs/violet\ sky\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+hr{
+    transform: rotateZ(90deg);
+}
+
+iframe {
+    height: 100vh;
+    position: relative;
+    body{
+        background-color: transparent;
+    }
+
+    &.chats{
+padding: 0 !important;
+    }
+}

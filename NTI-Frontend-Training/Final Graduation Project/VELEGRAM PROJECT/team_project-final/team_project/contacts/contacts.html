@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacts</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Irish+Grover&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet">
+            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./contacts.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="stories p-2">
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5 fw-bold">Stories (2)</p>
+                    <img src="../contacts-imgs/Group.svg" alt="">
+                </div>
+
+                <div class="d-flex gap-2 overflow-scroll">
+
+                    <div class="story position-relative  justify-content-center d-flex align-items-end " onclick="openStory('../contacts-imgs/who said that.png')">
+                        <p>Mohamed Ali</p>
+                        <img src="../contacts-imgs/who said that.png" alt=""
+                            class="position-absolute object-fit-fill h-100 img-fluid">
+                    </div>
+                    <div class="story position-relative justify-content-center  d-flex align-items-end " onclick="openStory('../contacts-imgs/1676624155134.jpg')">
+                        <p>Mohamed Ali</p>
+                        <img src="../contacts-imgs/1676624155134.jpg" alt=""
+                            class="position-absolute object-fit-fill h-100 img-fluid">
+                    </div>
+
+                    <div class="story position-relative justify-content-center  d-flex align-items-end ">
+                        <img src="../contacts-imgs/add-story.png" alt=""
+                            class="add position-absolute">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="contacts d-flex flex-column gap-3">
+                <p>Contacts Suggestions (4)</p>
+
+                <div class="contact d-flex bg_2 rounded-4 p-2 align-items-start" onclick="toChat()">
+                    <img src="../contacts-imgs/holmes.png" alt="" class="rounded-circle">
+
+                    <div class="contact-data flex-grow-1 ps-2 pe-4">
+                        <div class="name d-flex justify-content-between fs-5 fw-bold">
+                            <p>Simmon Grim</p>
+                            <img src="../contacts-imgs/favo-active.png" alt="" class="favo">
+                        </div>
+                        <p class="fs-5 fw-bold">Friend 1 from egypt</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical mt-1 fs-3"></i>
+                </div>
+                <div class="contact d-flex bg_2 rounded-4 p-2 align-items-start" onclick="toChat()">
+                    <img src="../contacts-imgs/MA.jpg" alt="" class="rounded-circle">
+
+                    <div class="contact-data flex-grow-1 ps-2 pe-4">
+                        <div class="name d-flex justify-content-between fs-5 fw-bold">
+                            <p>Mohamed Ali</p>
+                            <img src="../contacts-imgs/favo.png" alt="" class="favo">
+                        </div>
+                        <p class="fs-5 fw-bold">Friend 2 from egypt</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical mt-1 fs-3"></i>
+                </div>
+                <div class="contact d-flex bg_2 rounded-4 p-2 align-items-start" onclick="toChat()">
+                    <img src="../contacts-imgs/holmes.png" alt="" class="rounded-circle">
+
+                    <div class="contact-data flex-grow-1 ps-2 pe-4">
+                        <div class="name d-flex justify-content-between fs-5 fw-bold">
+                            <p>Simmon Grim</p>
+                            <img src="../contacts-imgs/favo-active.png" alt="" class="favo">
+                        </div>
+                        <p class="fs-5 fw-bold">Friend 3 from egypt</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical mt-1 fs-3"></i>
+                </div>
+                <div class="contact d-flex bg_2 rounded-4 p-2 align-items-start" onclick="toChat()">
+                    <img src="../contacts-imgs/holmes.png" alt="" class="rounded-circle">
+
+                    <div class="contact-data flex-grow-1 ps-2 pe-4">
+                        <div class="name d-flex justify-content-between fs-5 fw-bold">
+                            <p>Simmon Grim</p>
+                            <img src="../contacts-imgs/favo-active.png" alt="" class="favo">
+                        </div>
+                        <p class="fs-5 fw-bold">Friend 4 from egypt</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical mt-1 fs-3"></i>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+            <script src="./contacts.js"></script>
+    </body>
+
+</html>

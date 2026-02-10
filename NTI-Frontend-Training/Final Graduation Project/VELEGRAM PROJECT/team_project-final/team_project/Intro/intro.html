@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .intro {
+            position: relative;
+            background-image: url("./WhatsApp\ Image\ 2025-09-04\ at\ 19.16.26_a26ccf08.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* opacity: 90%; */
+            padding: 0% 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .intro::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(25, 0, 100, 0.6);
+            z-index: 1;
+        }
+
+        .imges p {
+            color: white;
+            font-size: 36px;
+        }
+
+        .w-40 {
+            width: 35%;
+        }
+
+        .text-con {
+            width: 50%;
+        }
+
+        .text-con h1 {
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5rem;
+            margin-top: 1rem;
+        }
+
+        .text-con button {
+            position: relative;
+            width: 100%;
+            padding: 20px 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: #433DA4;
+            transition: 0.3s;
+        }
+
+        .text-con button:hover {
+            transform: scale(0.95);
+        }
+
+        .text-con button a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        @media(max-width:767px) {
+            .intro {
+                flex-direction: column;
+                padding: 0% 3%;
+                justify-content: center !important;
+            }
+
+            .imges,
+            .text-con {
+                width: 100%;
+            }
+
+            .imges img {
+                width: 50%;
+                margin-top: 4rem;
+            }
+
+            .imges p {
+                font-size: 25px;
+            }
+
+            .text-con h1 {
+                width: 100%;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .text-con button {
+                /* margin-top: -50px; */
+                width: 100%;
+                padding: 10px 40px;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="intro w-100 min-vh-100">
+        <div class="imges d-flex justify-content-center align-items-center flex-column gap-5 w-40" style="z-index: 2;">
+            <img src="./Vector.png" alt="">
+            <p class="text-center">Here We Speak Together More Easily</p>
+        </div>
+        <div class="text-con d-flex justify-content-center align-items-center flex-column gap-5 " style="z-index: 2;">
+            <h1>VELEGRAM CHATS</h1>
+            <button onclick="toChat()" style="color: white;"><a>Start Chats</a></button>
+            <button  onclick="toChat()"><a href="">Suggested Channels</a></button>
+
+        </div>
+    </div>
+    <script>
+        function toChat() {
+            const largeScreen = window.innerWidth > 768;
+            if (!largeScreen) {
+                window.open('../contacts/contacts.html', '_self')
+            } else {
+                window.open('../Large-screen/large-chats.html', '_self')
+            }
+        }
+    </script>
+</body>
+
+</html>

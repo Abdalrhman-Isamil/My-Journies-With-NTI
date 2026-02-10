@@ -1,0 +1,67 @@
+:root{
+    --mainColor:#433DA4;
+    --secondBG:#584EC7;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+body{
+    font-family: irish-grover;
+    background-color: #0D114C;
+    color: white;
+}
+
+.container{
+    max-width: 768px;
+    margin: 0 auto;
+}
+.bg_2{
+background-color:var(--secondBG) ;
+}
+
+.story{
+    height:193px ;
+    width: 116px;
+    border: 4px solid var(--mainColor);
+    border-radius: 15px;
+
+    p{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    img{
+        z-index: -1;
+    }
+    img.add{
+        width: 40px;
+        height: 40px;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+    }
+
+    &:last-of-type{
+        background-color: color-mix(var(--main-color), transparent 70%);
+    }
+}
+
+.contact{
+    >img{
+width: 56px;
+height: 56px;
+    }
+    img.favo{
+        width: 32px;height: 32px;
+    }
+}

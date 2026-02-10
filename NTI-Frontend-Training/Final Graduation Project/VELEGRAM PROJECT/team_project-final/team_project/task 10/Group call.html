@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Call</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      font-family: Arial, sans-serif;
+      background-image: url("./violet\ sky\ 1.png");
+      color: #fff;
+      /* text-align: center; */
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      padding: 0% 10%;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      height: 105%;
+      background: rgba(25, 0, 100, 0.6);
+      z-index: -1;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 36px;
+    }
+    .card {
+      background-color: #584EC7;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 600px;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      /* ظل خفيف */
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .photo {
+      flex: 0 0 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .data {
+      flex: 1;
+      text-align: left;
+      margin: 0 10px;
+    }
+
+    .data h4 {
+      margin: 0;
+    }
+
+    .data p {
+      color: #fde8e8;
+      font-size: 10px;
+    }
+
+
+    .mike {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+    .invite {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn-round {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+    }
+
+    .btn-round:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+
+    .btn-red {
+      background: #f54430;
+    }
+
+    .btn-red:hover {
+      background: #ff5c4b;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Group Call</h1>
+  <div class="test"></div>
+
+  <div class="card">
+    <div class="photo">
+      <img src="holmes 2.png" alt="avatar">
+    </div>
+    <div class="data">
+      <h4>frinend_1 </h4>
+      <p>Friend 1 from Egypt</p>
+    </div>
+    <div class="mike live"><i class="bi bi-mic-fill"></i></div>
+  </div>
+  <!-- --------------------------------------- -->
+  <div class="card">
+    <div class="photo">
+      <img src="MA 1.png" alt="avatar">
+    </div>
+    <div class="data">
+      <h4>Friend_2</h4>
+      <p>Friend 2 from Egypt</p>
+    </div>
+    <div class=" mike muted"><i class="bi bi-mic-mute"></i></div>
+  </div>
+  <!-- --------------------------------------- -->
+  <div class="card">
+    <div class="photo">
+      <img src="holmes 2 (1).png" alt="avatar">
+    </div>
+    <div class="data">
+      <h4>Friend_3</h4>
+      <p>Friend 3 from Egypt</p>
+    </div>
+    <div class=" mike muted"><i class="bi bi-mic-mute"></i></div>
+  </div>
+  <!-- --------------------------------------- -->
+  <div class="card">
+    <div class="photo">
+      <img src="f61578091 3.png" alt="avatar">
+    </div>
+    <div class="data">
+      <h4>Friend_4</h4>
+      <p>Friend 4 from Egypt</p>
+    </div>
+    <div class=" mike muted"><i class="bi bi-mic-mute"></i></div>
+  </div>
+
+  <!-- --------------------------------------- -->
+  <div class="card">
+    <div class="photo">
+      <img src="f61578091 3.png" alt="avatar">
+    </div>
+    <div class="data">
+      <h4>Friend_4</h4>
+      <p>Friend 4 from Egypt</p>
+    </div>
+    <div class=" mike muted"><i class="bi bi-mic-mute"></i></div>
+  </div>
+  <!-- --------------------------------------- -->
+  <div class="invite">
+    <i class="bi bi-person-plus"></i> invite members
+  </div>
+
+
+  <div class="controls">
+    <button class="btn-round"><i class="bi bi-camera-video-off"></i></button>
+    <button class="btn-round"><i class="bi bi-mic-fill"></i></button>
+    <button class="btn-round btn-red"><i class="bi bi-telephone-fill"></i></button>
+  </div>
+
+</body>
+
+</html>
