@@ -1,0 +1,121 @@
+
+
+.parent{
+    border: 6px solid blueviolet;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,20px); */
+    grid-template-columns: 100px 100px 100px 100px;
+    /* grid-template-rows: 200px; */
+    grid-auto-rows: 100px;
+/* grid-template-areas: 
+"ch1 ch1 ch1 ch2 ch2 ch2 ch3 ch3 "
+"ch4 ch4 ch4  ch5 ch5 ch5   ch3 ch3 "
+"ch4 ch4 ch4 .   . .   ch3 ch3"
+; */
+/* gap: 10px;  */
+/* justify-items: center; */
+/* justify-content: end; */
+/* align-items: center; */
+}
+.chiled{
+    /* height: 100px; */
+    /* width: 50%; */
+    
+}
+.chiled1{
+    /* grid-area: ch1 ; */
+    /* margin: auto; */
+    /* align-self: end; */
+}
+.chiled2{
+    /* grid-area: ch2 ; */
+}
+.chiled3{
+    /* grid-area: ch3 ; */
+}
+
+.chiled4{
+    /* grid-area: ch4 ; */
+}
+.chiled5{
+    /* grid-area: ch5 ; */
+}
+/* 
+.item{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main . aside"
+    "footer footer footer footer"
+    ;
+    gap: 15px;
+}
+header{
+    background-color: orangered;
+    grid-area:header ;
+}
+main{
+    background-color: aqua;
+    grid-area: main;
+}
+aside{
+    background-color: blue;
+    grid-area: aside;
+}
+footer{
+    background-color: brown;
+    grid-area: footer;
+} */
+
+
+
+
+/* 
+.container {  display: grid;
+    height: 800px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header Header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer";
+   
+} */
+
+/* .Header { grid-area: Header;
+background-color: tomato;
+}
+
+.sidebar { grid-area: sidebar;  background-color: blue;}
+
+.content1 { grid-area: content1; background-color: aquamarine; }
+
+.content2 { grid-area: content2;  background-color: blueviolet;}
+
+.content3 { grid-area: content3;  background-color: red;}
+
+.footer { grid-area: footer; background-color: chartreuse; } */
+
+
+
+
+
+
+@media (max-width:800px){
+ 
+    .item{
+        grid-template-areas: 
+        ""
+        ""
+        ""
+        ""
+        ;
+    }
+}
