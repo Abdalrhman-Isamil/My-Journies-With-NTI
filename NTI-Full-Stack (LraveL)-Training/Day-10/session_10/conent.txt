@@ -1,0 +1,77 @@
+regex
+filter
+type of errors
+ -worning
+ -fatal error
+ -syntax error
+ -notice
+ -deprecated error
+
+include & require 
+echo & print
+double and single Quate   \n \f \t
+
+
+FILES-  file system
+
+database
+1-relational db
+no sql db
+
+ERD
+
+CREATE BATABASE NTI
+DEOP DATABASE NTI
+ CMD 
+   mysql -u root
+         CREATE BATABASE NTI;
+
+
+
+
+CREATE TABLE cutomers (
+    id INT AUTO_INCREMENT PRIMARY KEY ,
+    name varchar(100) NOT NULL ,
+    email varchar(50) UNIQUE ,
+    birdth_date DATE,
+    gender ENUM('male','femail') DEFAULT 'male' ,
+    INDEX id_name_email(name,email)
+    
+    
+    
+    );
+
+
+
+INSERT INTO users(name,email ,password , gender ,birth_date)
+VALUES ('malik','malik@gmail.com','1123','male','2022-7-13');
+
+
+
+
+
+INSERT INTO users(name,email ,password , gender ,birth_date)
+VALUES ('malik','malik@gmail.com','1123','male','2022-7-13'),
+('malik','malik@gmail.com','1123','male','2022-7-13'),
+('malik','malik@gmail.com','1123','male','2022-7-13'),
+('malik','malik@gmail.com','1123','male','2022-7-13')
+
+
+
+UPDATE users SET name = "zain" WHERE id = 1
+
+UPDATE users SET name = "mohamed" , gender = "male" WHERE id = 1;
+
+
+
+DELETE FROM users WHERE id=2;
+
+
+SELECT * FROM `customers`;
+
+
+SELECT first_name , last_name FROM `customers` WHERE 1;
+
+
+
+SELECT first_name as firstName , last_name FROM `customers` WHERE 1;
