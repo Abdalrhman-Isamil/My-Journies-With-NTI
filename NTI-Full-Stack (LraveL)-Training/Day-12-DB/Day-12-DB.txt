@@ -1,0 +1,88 @@
+ -----------------many to may -------------------------
+
+CREATE table students(
+id int AUTO_INCREMENT PRIMARY key ,
+ name varchar(50)   
+);
+CREATE table subjects(
+id int AUTO_INCREMENT PRIMARY key ,
+ name varchar(50)   
+);
+CREATE TABLE student_subject(
+id int PRIMARY key AUTO_INCREMENT ,
+student_id int ,
+subject_id int ,
+FOREIGN key(student_id)REFERENCES students(id),  
+   FOREIGN key(subject_id)REFERENCES subjects(id) 
+
+)
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+               ------------------join-------------------------
+
+SELECT * FROM employees
+JOIN departments
+on employees.department_id = departments.id
+
+
+
+SELECT emp.name , dep.name FROM employees as emp
+JOIN departments as dep
+on emp.department_id = dep.id;
+
+
+
+SELECT emp.name as employee_name , dep.name as department_name FROM employees as emp
+JOIN departments as dep
+on emp.department_id = dep.id;
+
+SELECT emp.name as employee_name , dep.name as department_name FROM employees as emp
+LEFT JOIN departments as dep
+on emp.department_id = dep.id;
+
+SELECT emp.name as employee_name , dep.name as department_name FROM employees as emp
+RIGHT JOIN departments as dep
+on emp.department_id = dep.id;
+
+
+-----union------
+
+SELECT name FROM employees
+UNION
+SELECT name FROM users
+
+
+SELECT name FROM employees
+UNION ALL 
+SELECT first_name FROM users
+
+
+
+
+
+SELECT emp.name as employee_name , dep.name as department_name FROM employees as emp
+LEFT JOIN departments as dep
+on emp.department_id = dep.id
+
+UNION ALL
+
+
+SELECT emp.name as employee_name , dep.name as department_name FROM employees as emp
+RIGHT JOIN departments as dep
+on emp.department_id = dep.id;
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+                  copy structure
+
+CREATE TABLE customer_test LIKE customers
+
+INSERT INTO customer_test SELECT * FROM customers
+
+CREATE TABLE customer_test as SELECT * FROM customers
