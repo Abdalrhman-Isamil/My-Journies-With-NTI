@@ -1,0 +1,27 @@
+ 
+ ---Installation    (https://laravel.com/docs/11.x/installation)
+
+  => composer global require laravel/installer    مره وحده ف حياتك هتعمل السطر ده 
+   
+ =>  laravel new example-app     مع كل مشروع جديد هتعمله تكريته من خلال الكومند ده 
+ 
+
+--Routing      (https://laravel.com/docs/11.x/routing)
+
+--Controllers   (https://laravel.com/docs/11.x/controllers)
+
+--Middleware   (https://laravel.com/docs/11.x/middleware)
+
+--Database: Migrations  (https://laravel.com/docs/11.x/migrations)
+
+--Model (https://laravel.com/docs/11.x/eloquent#generating-model-classes)
+ 
+--Factories (https://laravel.com/docs/11.x/eloquent-factories)
+
+--Database: Seeding (https://laravel.com/docs/11.x/seeding)
+
+ => gat data and insert data 
+
+--View (https://laravel.com/docs/11.x/views)
+
+--Blade Templates (https://laravel.com/docs/11.x/blade)

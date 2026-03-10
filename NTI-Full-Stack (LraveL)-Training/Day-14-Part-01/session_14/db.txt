@@ -1,0 +1,156 @@
+ 
+-----------------Trigger------------------------------
+
+DELIMITER //
+CREATE TRIGGER national_user
+AFTER INSERT ON users
+FOR EACH ROW
+BEGIN
+INSERT INTO nationalids(number_id ,user_id)
+VALUES(1236058 , NEW.id);
+END //
+
+
+
+
+DELIMITER //
+CREATE TRIGGER check_bouns
+BEFORE UPDATE ON users
+FOR EACH ROW
+BEGIN
+IF new.bouns > 2000
+THEN SET new.bouns = 2000;
+END IF ;
+END //
+
+
+
+DELIMITER //
+CREATE TRIGGER users_logs_delete
+AFTER DELETE ON users
+FOR EACH ROW
+BEGIN
+INSERT INTO users_logs(name,created_at)
+VALUES(old.name ,NOW());
+
+END //
+
+
+
+ //////////////////////////////////////////////////////////////////////////////////////
+
+-----------------------view---------------------------
+CREATE new users_info
+AS SELECT * FROM users
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+--------------subquery---------------
+
+SELECT AVG(salary) FROM employees
+
+SELECT name , salary  FROM employees WHERE salary > (SELECT AVG(salary) FROM employees)
+
+
+SELECT name ,(SELECT name FROM departments WHERE departments.id = employees.department_id) as depart_name
+FROM `employees`;
+
+
+SELECT name FROM employees WHERE department_id IN(SELECT id FROM departments WHERE name = "sales");
+
+----------------exists---------
+
+SELECT name FROM employees WHERE EXISTS (SELECT id FROM departments WHERE departments.id=employees.department_id);
+
+SELECT name FROM employees WHERE NOT EXISTS (SELECT id FROM departments WHERE departments.id=employees.department_id);
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+           -------------selfjoin-------------------
+
+SELECT emp.name as employee_name ,manager.name as manager_name FROM `employees` as emp
+LEFT JOIN employees as manager ON emp.manager_id = manager.id
+
+
+
+/////////////////////////////////////////////////////////////
+engin
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+         -----------------DB Connection---------------------
+
+
+$connection = mysqli_connect('localhost','root','','nti11');
+if($connection){
+   echo "success";
+}
+else{
+    echo "connection faild";
+}
+
+
+<?php
+require('connection.php');
+$query = "SELECT * FROM `customers`";
+$result = mysqli_query($connection , $query);
+$customers = mysqli_fetch_all($result ,MYSQLI_ASSOC);
+// echo "<pre>";
+// print_r($data);die();
+?>
+
+
+
+
+
+
+
+         ---------------insert------------------
+
+require('connection.php');
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
+$email = $_POST['email'];
+$gender = $_POST['gender'];
+$money = $_POST['money'];
+$city = $_POST['city'];
+$country = $_POST['country'];
+$country_code = $_POST['country_code'];
+
+
+$query = "INSERT INTO customers (`first_name`,`last_name`,`email`,`gender`,`money`,`city`,`country`,`country_code`)
+VALUES('$first_name','$last_name','$email','$gender','$money','$city','$country','$country_code')" ;
+
+$result = mysqli_query($connection , $query);
+if($result){
+    echo "Inserted Successfully";
+    header('location:index.php');
+    exit();
+}
+  header('location:create.php');
+    exit();
+}
+
+
+
+              -------------delete--------------
+
+require('connection.php');
+$id = $_GET['id'];
+if($id){
+$query = "DELETE FROM customers WHERE id = $id " ; 
+$result = mysqli_query($connection , $query );
+  
+  if($result){
+    header('location:index.php');
+    exit();
+  }
+}
+
+      <td> <a href="deleteCustomer.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
